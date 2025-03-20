@@ -1,4 +1,7 @@
 import menu.bootloader
+import sys
+import traceback
+
 
 if __name__ == "__main__":
   try:

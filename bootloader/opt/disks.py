@@ -126,4 +126,4 @@ def get_all_partitions():
 if __name__ == "__main__":
   state = find_state()
   utils.stateful_mount.mkdir(parents=True)
-  utils.run_command(["/bin/busybox", "mount", state, str(stateful_mount)])
+  utils.run_command(["/bin/busybox", "mount", state, str("stateful_mount")])
