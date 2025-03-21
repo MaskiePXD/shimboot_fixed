@@ -1,4 +1,14 @@
-name: Build Shimboot Grunt
+name: build-image
+run-name: Build the shimboot disk image for the grunt board
+
+on:
+  workflow_dispatch:  # This allows manual triggering
+
+jobs:
+  build:
+    permissions:
+      contents: write
+
     strategy: 
       matrix:
         board: [grunt]  # This ensures only the 'grunt' board is built
