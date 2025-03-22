@@ -17,7 +17,7 @@ print_help() {
   echo "  distro       - The Linux distro to use. This should be either 'debian', 'ubuntu', or 'alpine'."
   echo "  greeter      - The Greeter to use valid options are: "
   # Lightdm may be Broken! And Only for Ubuntu At this time of Being
-  #And LXDM is giving one error but its working!
+  #LXDM is giving one error but its working!
   echo "                    sddm, lightdm-gtk, lxdm"
 }
 
@@ -104,7 +104,7 @@ sigint_handler() {
 }
 trap sigint_handler SIGINT
 
-shim_url="https://dl.darkn.bio/api/raw/?path=/SH1mmer/$board.zip"
+shim_url="https://dl.fanqyxl.net/ChromeOS/Raw%20Shims/$board-Raw.bin"
 boards_url="https://chromiumdash.appspot.com/cros/fetch_serving_builds?deviceCategory=ChromeOS"
 
 if [ -z "$data_dir" ]; then
